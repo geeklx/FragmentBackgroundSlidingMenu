@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="@color/gray"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/mChat"
+                android:layout_width="fill_parent"
+                android:layout_height="37dp"
+                android:gravity="center"
+                android:text="聊天"
+                android:textColor="#008000" />
+
+            <ImageView
+                android:id="@+id/id_tabLine1"
+                android:layout_width="fill_parent"
+                android:layout_height="3dp"
+                android:background="@drawable/tabline" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/mClass"
+                android:layout_width="fill_parent"
+                android:layout_height="37dp"
+                android:gravity="center"
+                android:text="通讯录"
+                android:textColor="@color/black" />
+
+            <ImageView
+                android:id="@+id/id_tabLine2"
+                android:layout_width="fill_parent"
+                android:layout_height="3dp"
+                android:visibility="gone"
+                android:background="@drawable/tabline" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/mFind"
+                android:layout_width="fill_parent"
+                android:layout_height="37dp"
+                android:gravity="center"
+                android:text="发现"
+                android:textColor="@color/black" />
+
+            <ImageView
+                android:id="@+id/id_tabLine3"
+                android:layout_width="fill_parent"
+                android:layout_height="3dp"
+                android:visibility="gone"
+                android:background="@drawable/tabline" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/mMe"
+                android:layout_width="fill_parent"
+                android:layout_height="37dp"
+                android:gravity="center"
+                android:text="我"
+                android:textColor="@color/black" />
+
+            <ImageView
+                android:id="@+id/id_tabLine4"
+                android:layout_width="fill_parent"
+                android:layout_height="3dp"
+                android:visibility="gone"
+                android:background="@drawable/tabline" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

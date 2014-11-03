@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:hyman="http://schemas.android.com/apk/res/com.liangxiao.weixin2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.liangxiao.slidingmenu.view.SlidingMenu
+        android:id="@+id/menu_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        hyman:rightPadding="150dp" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <!-- menu -->
+
+            <include layout="@layout/left_menu" />
+            <!-- content -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <include layout="@layout/top1" />
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/id_viewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="6"
+                    android:background="@color/white" />
+
+                <include layout="@layout/top2" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.liangxiao.slidingmenu.view.SlidingMenu>
+
+</LinearLayout>
